@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/andela-logo.png';
+import logo from '../../../assets/images/andela-logo.png';
 import 
 backgroundImg 
-  from '../../assets/images/google-logo-icon-PNG-Transparent-Background.png';
+  from '../../../assets/images/google-logo-icon-PNG-Transparent-Background.png';
 
 const Navbar = (props) => (
   <header className="nav-bar">
