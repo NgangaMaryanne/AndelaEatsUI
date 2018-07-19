@@ -31,9 +31,6 @@ jobs:
       - run: 
           name: install dependencies 
           command: cd client/ && yarn install
-      - run: 
-          name: create application artifacts
-          command: cd client && npm run build:production
       - run:
           name: Deploy application to environment
           command: |
@@ -47,8 +44,8 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only:
-                - master
-                - /(release|hotfix)\/v[0-9].[0-9].[0-9]/
+          # filters:
+          #   branches:
+          #     only:
+          #       - master
+          #       - /(release|hotfix)\/v[0-9].[0-9].[0-9]/
